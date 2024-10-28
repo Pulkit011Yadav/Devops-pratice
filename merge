@@ -1,0 +1,4 @@
+This is the content for the merge file with some different changes.
+We are working on a different branch and will merge this later.
+Merge conflicts might occur if there are overlapping changes.
+Resolving conflicts is part of the Git workflow for managing multiple branches
