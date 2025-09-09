@@ -1,70 +1,70 @@
-# GIT COMMANDS CHEAT SHEET
+# Git Commands Cheat Sheet
 
-1. Initialization & Setup
- 
- Start a new Git repository in your project directory
+Initialization & Setup
+
+Start a new Git repository
 git init
 
-2. File Operations & Status
+File Operations & Status
 
-Check Status: Check the current status of files in the repository
+Check the current status of files in the repository
 git status
 
-Stage File: Add a file to the staging area to prepare for commit
+Stage a file for commit
 git add <filename>
 
-Commit Changes: Commit all staged files with a descriptive message
+Commit staged changes with a message
 git commit -m "message"
 
-3. Restore & Remove
+Restore & Remove
 
-Restore File: Restore a deleted or modified file back to last committed state
+Restore a deleted or modified file
 git restore <filename>
 
-Remove from Staging: Remove a file from staging but keep it locally
+Remove a file from staging but keep it locally
 git rm --cached <filename>
 
-Unstage File: Remove a file from the staging area before committing
+Unstage a file from staging area
 git restore --staged <filename>
 
-4. Logs & History
+Logs & History
 
-Full Commit History: View the detailed commit history of the repository
+View full commit history
 git log
 
-Compact History: View commit history in short, one-line format
+View commit history in short format
 git log --oneline
 
-5. Branching & Switching
+Branching & Switching
 
-List Branches: List all branches in the repository
+List all branches in the repository
 git branch
 
-Create Branch: Create a new branch for separate development
+Create a new branch
 git branch <branchname>
 
-Switch Branch: Switch to a different branch
+Switch to a branch
 git checkout <branchname>
 
-Alternative Switch: Another way to switch branches
+Alternative way to switch branches
 git switch <branchname>
 
-6. Workflow Example
+Workflow Example
 
-Create & Switch Branch: Create a new branch "dev" and switch to it
+Create a new branch "dev" and switch to it
 git checkout -b dev
 
-Create File: Create a new file for practice
+Create a new file
 touch file.txt
 
-Stage File: Stage the newly created file
+Stage the file for commit
 git add file.txt
 
-Commit File: Commit the staged file with a message
+Commit the staged changes
 git commit -m "added file"
 
-Switch to Master: Return to master branch
+Switch back to master branch
 git checkout master
 
-Merge Branch: Merge changes from "dev" into master branch
+Merge "dev" branch into master
 git merge dev
