@@ -2,9 +2,12 @@
 
 This repository is for  understanding  Git concepts for Devops
 
-Includes
+Includes:
+
 Commands 
+
 Notes
+
 projects
 
 
