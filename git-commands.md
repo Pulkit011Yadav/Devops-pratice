@@ -1,70 +1,51 @@
 # Git Commands Cheat Sheet
 
-Initialization & Setup
+1. Initialization & Setup
 
-Start a new Git repository
-git init
+git init → Start a new repository
 
-File Operations & Status
+2. File Operations & Status
 
-Check the current status of files in the repository
-git status
+git status → Check repo status
 
-Stage a file for commit
-git add <filename>
+git add <filename> → Stage file
 
-Commit staged changes with a message
-git commit -m "message"
+git commit -m "message" → Commit changes
 
-Restore & Remove
+3. Restore & Remove
 
-Restore a deleted or modified file
-git restore <filename>
+git restore <filename> → Restore deleted/modified file
 
-Remove a file from staging but keep it locally
-git rm --cached <filename>
+git rm --cached <filename> → Unstage file from Git
 
-Unstage a file from staging area
-git restore --staged <filename>
+git restore --staged <filename> → Remove file from staging area
 
-Logs & History
+4. Logs & History
 
-View full commit history
-git log
+git log → Full commit history
 
-View commit history in short format
-git log --oneline
+git log --oneline → Short commit history
 
-Branching & Switching
+5. Branching & Switching
 
-List all branches in the repository
-git branch
+git branch → List branches
 
-Create a new branch
-git branch <branchname>
+git branch <branchname> → Create a branch
 
-Switch to a branch
-git checkout <branchname>
+git checkout <branchname> → Switch branch
 
-Alternative way to switch branches
-git switch <branchname>
+git switch <branchname> → Alternative branch switch
 
-Workflow Example
+6. Workflow Example
 
-Create a new branch "dev" and switch to it
-git checkout -b dev
+git checkout -b dev → Create & switch to dev
 
-Create a new file
-touch file.txt
+touch file.txt → Create a file
 
-Stage the file for commit
-git add file.txt
+git add file.txt → Stage it
 
-Commit the staged changes
-git commit -m "added file"
+git commit -m "added file" → Commit
 
-Switch back to master branch
-git checkout master
+git checkout master → Go back to master
 
-Merge "dev" branch into master
-git merge dev
+git merge dev → Merge dev into master
