@@ -1,4 +1,5 @@
-GIT COMMANDS CHEAT SHEET
+# GIT COMMANDS CHEAT SHEET
+
 1. Initialization & Setup
 Description: Start a new Git repository in your project directory
 git init
