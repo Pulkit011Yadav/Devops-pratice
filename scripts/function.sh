@@ -28,11 +28,10 @@ if [ "$hobby" == "cars" ];then
 	echo "$othername: oh nice i love cars too"
 
 elif [ "$hobby" == "games" ];then
-	echo "$othername: oh nice i play sometimes some games"
+	echo "$othername: oh nice i also play sometimes games"
 else
 	echo "$othername: nice choice intresting "
 fi
 
 }
-chat_winter
 chat_winter
