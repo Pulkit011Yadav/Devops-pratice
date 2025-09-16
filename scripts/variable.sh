@@ -52,9 +52,9 @@ do
 if [ "$hobby" == "cars" ]; then
 	echo " $othername: Well I love cars too "
 elif [ "$hobby" == "games" ]; then
-	echo " $othername: oh i also play games not everytime sometime but yeah i like games well we have similars hobby"
+	echo " $othername: oh i also play games"
 elif [ "$hobby" == "sleeping" ]; then
-	echo " $othername: hahahaha i sleep alot because i am sleeping queen hahahah"
+	echo " $othername: hahahaha i sleep alot"
 else 
 	echo " $othername: nice choice intresting "
 fi
