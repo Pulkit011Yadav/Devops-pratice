@@ -2,50 +2,90 @@
 
 1. Initialization & Setup
 
-git init → Start a new repository
+git init → Start a new repo
+
+git clone <repo-url> → Copy remote repo locally
 
 2. File Operations & Status
 
 git status → Check repo status
 
-git add <filename> → Stage file
+git add <file> → Stage a file
 
-git commit -m "message" → Commit changes
+git add . → Stage all changes
+
+git commit -m "message" → Commit staged changes
+
+git commit -am "message" → Stage + commit (already tracked files)
 
 3. Restore & Remove
 
-git restore <filename> → Restore deleted/modified file
+git restore <file> → Restore modified file
 
-git rm --cached <filename> → Unstage file from Git
+git restore --staged <file> → Unstage file
 
-git restore --staged <filename> → Remove file from staging area
+git rm <file> → Delete file + stage deletion
+
+git rm --cached <file> → Unstage file without deleting
 
 4. Logs & History
 
 git log → Full commit history
 
-git log --oneline → Short commit history
+git log --oneline → Short view
+
+git log --graph --all --oneline → Visual graph of branches
 
 5. Branching & Switching
 
 git branch → List branches
 
-git branch <branchname> → Create a branch
+git branch <branch-name> → Create new branch
 
-git checkout <branchname> → Switch branch
+git checkout <branch> → Switch branch
 
-git switch <branchname> → Alternative branch switch
+git switch <branch> → Alternative switch
 
-6. Workflow Example
+git checkout -b <branch> → Create + switch branch
 
-git checkout -b dev → Create & switch to dev
+git merge <branch> → Merge branch into current
 
-touch file.txt → Create a file
+6. Remote Operations
 
-git add file.txt → Stage it
+git remote -v → Show remote repo URL
 
-git commit -m "added file" → Commit
+git remote add origin <url> → Add remote repo
 
-git checkout master → Go back to master
+git fetch → Fetch changes from remote (without merging)
 
-git merge dev → Merge dev into master
+git pull → Fetch + merge changes from remote
+
+git push origin <branch> → Push local commits to remote
+
+7. Undo & Reset
+
+git reset HEAD <file> → Unstage file
+
+git reset --soft <commit> → Undo commits, keep changes staged
+
+git reset --hard <commit> → Undo commits + changes permanently
+
+git revert <commit> → Create new commit that undoes previous
+
+8. Tags & Releases
+
+git tag → List tags
+
+git tag <tag-name> → Create tag
+
+git push origin <tag-name> → Push tag to remote
+
+9. Stash (Temporary Save)
+
+git stash → Save uncommitted changes
+
+git stash apply → Restore saved changes
+
+git stash list → List stashed changes
+
+git stash drop → Delete a stash
