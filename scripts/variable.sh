@@ -45,7 +45,7 @@ sleep 2
 
 echo " $name : yes "
 
-like_Stuff="cars sports games concert sleeping"
+like_Stuff="cars sports games sleeping"
 
 for hobby in $like_stuff
 do
